@@ -14,6 +14,12 @@ public class CompositeExample {
 
         Car aRedCar = new Car("Ferrari", "F500");
         System.out.println(aRedCar.toString());
+        System.out.println("Er zitten " + aFord.getParts().size() + " onderdelen in deze auto");
 
         Part aRandomPart = new Part("I should not exist");
+        aRedCar.addPart("Paint red");
+        System.out.println(aRedCar.toString());
+        System.out.println("Er zitten " + aRedCar.getParts().size() + " onderdelen in deze auto");
+
     }
+}

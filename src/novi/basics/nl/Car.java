@@ -16,6 +16,11 @@ public class Car {
 
     // Getters en Setters weggelaten.
 
+
+    public List<Part> getParts() {
+        return parts;
+    }
+
     /**
      * This method gets a partName, creates a Part-object and adds it to the list.
      * @param partName the name of the part.
